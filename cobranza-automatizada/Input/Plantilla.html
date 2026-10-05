@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cobranza</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 20px;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #2c3e50;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Buenos días {{Nombre_agente}}</h2>
+    <p>
+      Te compartimos los datos de la cobranza de tus pólizas.  
+      Recuerda que cualquier duda puedes dirigirte directamente por este medio para ayudarte con las dudas de tus pólizas.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Estatus</th>
+          <th>Total Prima</th>
+          <th>No. Registros</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí se insertan dinámicamente las filas del resumen -->
+        {{Tabla_resumen}}
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
