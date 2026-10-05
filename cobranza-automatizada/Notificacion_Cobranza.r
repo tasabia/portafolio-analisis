@@ -24,7 +24,7 @@ cargar_librerias(Librerias)
 
 #-------------- 02. Ligas -----------------------------------------------------#
 # Definir carpeta raíz del proyecto
-Carpeta_raiz <- paste0(here(), "/Proyectos_R/Envio_Correos_R")
+Carpeta_raiz <- paste0(here(), "/portafolio-analisis/cobranza-automatizada")
 
 # Subcarpetas relativas
 Carpeta_input  <- file.path(Carpeta_raiz, "Input")
